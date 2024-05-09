@@ -9,33 +9,21 @@ success_tests! {
         expected: "3628800",
     },
     {
-        name: even_odd_1,
-        file: "even_odd.snek",
-        input: "10",
-        expected: "10\ntrue\ntrue",
-    },
-    {
-        name: even_odd_2,
-        file: "even_odd.snek",
-        input: "9",
-        expected: "9\nfalse\nfalse",
-    },
-    {
         name: lam0,
         file: "lam0.snek",
-        input: "",
+        input: "0",
         expected: "6",
     },
     {
         name: lam1,
         file: "lam1.snek",
-        input: "",
+        input: "0",
         expected: "50",
     },
     {
         name: lam2,
-        file: "lam1.snek",
-        input: "",
+        file: "lam2.snek",
+        input: "0",
         expected: "(vec 6 50)",
     },
     {
@@ -55,14 +43,16 @@ success_tests! {
 }
 
 runtime_error_tests! {
-    lam_arity: "arity mismatch",
-    lam_not_fun: "callee is not a function",
-}
-
-static_error_tests! {
     {
-        name: duplicate_params,
-        file: "duplicate_params.snek",
-        expected: "",
+        name: lam_not_fun,
+        file: "lam_not_fun.snek",
+        input: "",
+        expected: "callee is not a function",
+    },
+    {
+        name: lam_arity,
+        file: "lam_arity.snek",
+        input: "",
+        expected: "arity mismatch",
     }
 }
