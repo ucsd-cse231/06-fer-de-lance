@@ -42,7 +42,7 @@ success_tests! {
         name: lam_map,
         file: "lam-map.snek",
         input: "100",
-        expected: "(vec 110 (vec 120 (vec 130 false)))",
+        expected: "(vec 110 (vec 120 (vec 130 nil)))",
     },
 
 
