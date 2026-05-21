@@ -17,4 +17,3 @@
 
 (let (l (range 1 (+ input 1)))
   (fold (fn (x y) (+ x y)) 0 l))
-

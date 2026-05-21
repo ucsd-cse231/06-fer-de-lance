@@ -11,4 +11,3 @@
 (let (inc (fn (x) (+ x off)))
 (let (xs  (vec 10 (vec 20 (vec 30 nil))))
   (map inc xs))))
-
