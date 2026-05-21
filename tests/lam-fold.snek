@@ -3,11 +3,11 @@
 
 (defn (tail l) (vec-get l 1))
 
-(defn (emp l) (= l false))
+(defn (emp l) (= l nil))
 
 (defn (range i j)
   (if (= i j)
-    false
+    nil
     (vec i (range (+ i 1) j))))
 
 (defn (fold f acc xs)
