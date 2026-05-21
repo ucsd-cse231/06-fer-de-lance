@@ -27,6 +27,12 @@ success_tests! {
         expected: "(vec 6 50)",
     },
     {
+        name: lam_compose,
+        file: "lam-compose.snek",
+        input: "100",
+        expected: "102",
+    },
+    {
         name: lam_fac,
         file: "lam-fac.snek",
         input: "5",
@@ -52,6 +58,12 @@ runtime_error_tests! {
     {
         name: lam_arity,
         file: "lam_arity.snek",
+        input: "",
+        expected: "arity mismatch",
+    },
+    {
+        name: lam_arity_2,
+        file: "lam_arity_2.snek",
         input: "",
         expected: "arity mismatch",
     }
