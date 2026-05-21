@@ -1,4 +1,4 @@
-(fun (fun1 a a)
+(defn (fun1 a a)
     (+ a a)
 )
 

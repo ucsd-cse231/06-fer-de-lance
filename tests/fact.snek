@@ -1,5 +1,5 @@
-(fun (fact n)
-  (let
+(defn (fact n)
+  (let*
     ((i 1) (acc 1))
     (loop
       (if (> i n)
